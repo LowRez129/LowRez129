@@ -1,10 +1,13 @@
 import { AppContainer } from "./AppStyles"
+import Profile from "./components/profile/Profile"
+import Skills from "./components/skills/Skills"
 
 function App() {
 
   return (
     <AppContainer>
-      adnalwkdnlandlankd
+      <Profile/>
+      <Skills/>
     </AppContainer>
   )
 }
