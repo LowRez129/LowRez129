@@ -1,5 +1,6 @@
 import { AppContainer } from "./AppStyles"
 import Profile from "./components/profile/Profile"
+import ProjectsSection from "./components/projects/ProjectsSection"
 import Skills from "./components/skills/Skills"
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <AppContainer>
       <Profile/>
       <Skills/>
+      <ProjectsSection/>
     </AppContainer>
   )
 }
