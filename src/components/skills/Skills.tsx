@@ -8,12 +8,12 @@ import SkillIcon from "./SkillIcon";
 export default function Skills () {
     return (
         <SkillsContainer>
-            <SkillsHeader>Skills</SkillsHeader>
+            <SkillsHeader>Skills:</SkillsHeader>
             <IconContainer>
                 <SkillIcon src={postgres_icon} name="Postgresql"/>
                 <SkillIcon src={express_icon} name="Express"/>
-                <SkillIcon src={postgres_icon} name="Postgresql"/>
-                <SkillIcon src={express_icon} name="Express"/>
+                <SkillIcon src={react_icon} name="React"/>
+                <SkillIcon src={node_js_icon} name="Node.js"/>
                 <SkillIcon src={postgres_icon} name="Postgresql"/>
                 <SkillIcon src={express_icon} name="Express"/>
                 <SkillIcon src={postgres_icon} name="Postgresql"/>

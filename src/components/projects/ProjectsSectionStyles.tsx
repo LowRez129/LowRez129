@@ -2,21 +2,21 @@ import styled from "styled-components";
 
 const ProjectsSectionContainer = styled.section`
     display: grid;
-    grid-template-rows: 100px;
-    background-color: yellowgreen;
+    grid-template-rows: 50px;
+    background-color: white;
 `;
 
 const ProjectsHeader = styled.div`
     display: grid;
-    background-color: rebeccapurple;
+    background-color: deepskyblue;
     font-size: xx-large;
     justify-items: center;
     align-items: center;
+    border: solid black;
 `;
 
 const ProjectsContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(2, 50%);
 `;
 
 export { ProjectsSectionContainer, ProjectsHeader, ProjectsContainer };

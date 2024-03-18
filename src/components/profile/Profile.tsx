@@ -1,10 +1,11 @@
-import { ProfileContainer, ProfileDescription, ProfileName, ProfilePicture } from "./ProfileStyle";
+import { ProfileContainer, ProfileDescription, ProfileHeader, ProfileName, ProfilePicture } from "./ProfileStyle";
 
 export default function Profile () {
     return(
         <ProfileContainer>
+            <ProfileHeader>Profile:</ProfileHeader>
             <ProfilePicture/>
-            <ProfileName>ALDWAD</ProfileName>
+            <ProfileName>LowRez129</ProfileName>
             <ProfileDescription>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Aenean tempor, est a auctor semper, nisl nisi condimentum nunc, a finibus ex velit nec est. Cras varius pretium risus ac dignissim. 
