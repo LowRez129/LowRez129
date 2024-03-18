@@ -1,4 +1,4 @@
-import { Icon, IconContainer, SkillsContainer, SkillsHeader } from "./SkillsStyle";
+import { IconContainer, SkillsContainer, SkillsHeader } from "./SkillsStyle";
 import postgres_icon from "../../assets/postgresql-svgrepo-com.svg";
 import express_icon from "../../assets/express-svgrepo-com.svg";
 import react_icon from "../../assets/react-svgrepo-com.svg";

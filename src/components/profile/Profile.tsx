@@ -1,10 +1,16 @@
-import { ProfileContainer, ProfileDescription, ProfileHeader, ProfileName, ProfilePicture } from "./ProfileStyle";
+import { LinkIcon, LinkIconContainer, ProfileContainer, ProfileDescription, ProfileHeader, ProfileName, ProfilePicture } from "./ProfileStyle";
+import css_icon from "../../assets/css-3-svgrepo-com.svg";
 
 export default function Profile () {
     return(
         <ProfileContainer>
             <ProfileHeader>Profile:</ProfileHeader>
             <ProfilePicture/>
+            <LinkIconContainer>
+                <LinkIcon src={css_icon}/>
+                <LinkIcon src={css_icon}/>
+                <LinkIcon src={css_icon}/>
+            </LinkIconContainer>
             <ProfileName>LowRez129</ProfileName>
             <ProfileDescription>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
