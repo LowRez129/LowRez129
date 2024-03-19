@@ -7,11 +7,11 @@ export default function Profile () {
             <ProfileHeader>Profile:</ProfileHeader>
             <ProfilePicture/>
             <LinkIconContainer>
+            <ProfileName>LowRez129:</ProfileName>
                 <LinkIcon src={css_icon}/>
                 <LinkIcon src={css_icon}/>
                 <LinkIcon src={css_icon}/>
             </LinkIconContainer>
-            <ProfileName>LowRez129</ProfileName>
             <ProfileDescription>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Aenean tempor, est a auctor semper, nisl nisi condimentum nunc, a finibus ex velit nec est. Cras varius pretium risus ac dignissim. 

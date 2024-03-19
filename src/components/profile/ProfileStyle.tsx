@@ -3,14 +3,25 @@ import styled from "styled-components";
 const ProfileContainer = styled.section`
     display: grid;
     gap: 10px;
+    padding: 10px;
     background-color: dodgerblue;
     grid-template-columns: 60% 1fr;
     grid-template-areas:
         "profile_header profile_header"
-        "picture icon_container"
-        "profile_name icon_container"
+        "picture picture"
+        "icon_container icon_container"
         "description description"
     ;
+
+    @media screen and (min-width: 600px) {
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: 10% 20% 1fr;
+        grid-template-areas:
+            "profile_header profile_header"
+            "picture icon_container"
+            "picture description"
+        ;
+    }
 `;
 
 const ProfileHeader = styled.div`
@@ -24,12 +35,10 @@ const ProfileHeader = styled.div`
 `;
 
 const ProfilePicture = styled.img`
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
     background-color: deepskyblue;
-    justify-self: center;
     grid-area: picture;
-    border: solid black;
 `;
 
 const ProfileName = styled.div`
@@ -37,30 +46,21 @@ const ProfileName = styled.div`
     justify-content: center;
     align-items: center;
     background-color: deepskyblue;
-    grid-area: profile_name;
-    margin: 10px;
-    height: 50px;
-    border: solid black;
+    padding: 10px
 `;
 
 const ProfileDescription = styled.div`
     background-color: deepskyblue;
     padding: 10px;
-    margin: 10px;
     grid-area: description;
 `;
 
 const LinkIconContainer = styled.div`
     display: grid;
     gap: 10px;
-    padding: 10px;
-    grid-template-columns: 70px;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-area: icon_container;
-    justify-self: center;
-    align-items: center;
     background-color: dodgerblue;
-    border: solid black;
 `;
 
 const LinkIcon = styled.img`

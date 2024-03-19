@@ -24,6 +24,11 @@ const IconContainer = styled.div`
     justify-self: center;
     align-self: center;
     background-color: dodgerblue;
+
+    @media screen and (min-width: 600px) {
+        grid-template-columns: repeat(8, 125px);
+        grid-template-rows: repeat(1, 125px);
+    }
 `;
 
 export { SkillsContainer, SkillsHeader, IconContainer };

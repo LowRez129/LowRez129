@@ -6,6 +6,10 @@ const SkillIconContainer = styled.div`
     gap: 5px;
     padding: 5px;
     background-color: black;
+    transition: transform 0.5s;
+    &:hover {
+        transform: translateY(-5px);
+    }
 `;
 
 const Icon = styled.img`

@@ -10,10 +10,10 @@ export default function Project ({ src, name, description } : { src: string, nam
         <ProjectContainer>
             <ProjectImage src={src}/>
             <LinkButtonContainer>
-                <LinkButton onClick={goto_neolexicon_website}>Neolexicon</LinkButton>
-                <LinkButton onClick={goto_neolexicon_github}>Github Repo</LinkButton>
+                <ProjectName>{name}</ProjectName>
+                <LinkButton onClick={goto_neolexicon_website}>&lt;Website&gt;</LinkButton>
+                <LinkButton onClick={goto_neolexicon_github}>&lt;Github Repo&gt;</LinkButton>
             </LinkButtonContainer>
-            <ProjectName>{name}</ProjectName>
             <ProjectDescription>{description}</ProjectDescription>
         </ProjectContainer>
     )

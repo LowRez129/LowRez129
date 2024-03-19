@@ -1,6 +1,6 @@
 const neolexicon = {
     src: "",
-    name: "neolexicon",
+    name: "Neolexicon:",
     description: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Aenean tempor, est a auctor semper, nisl nisi condimentum nunc, a finibus ex velit nec est. Cras varius pretium risus ac dignissim. 
