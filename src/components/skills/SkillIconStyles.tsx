@@ -3,18 +3,18 @@ import styled from "styled-components";
 const SkillIconContainer = styled.div`
     display: grid;
     grid-template-rows: 80% 1fr;
-    gap: 5px;
-    padding: 5px;
-    background-color: black;
+    gap: 10px;
     transition: transform 0.5s;
+    background-color: black;
     &:hover {
         transform: translateY(-5px);
     }
 `;
 
 const Icon = styled.img`
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
+    padding: 10%;
     background-color: cornflowerblue;
 `;
 

@@ -17,13 +17,14 @@ const SkillsHeader = styled.div`
 
 const IconContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(2, 125px);
-    grid-template-rows: repeat(4, 125px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 10px;
     padding: 10px;
+    margin: 10px;
     justify-self: center;
     align-self: center;
-    background-color: dodgerblue;
+    background-color: black;
 
     @media screen and (min-width: 600px) {
         grid-template-columns: repeat(8, 125px);
