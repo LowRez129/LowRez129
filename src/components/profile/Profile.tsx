@@ -1,16 +1,15 @@
 import { LinkIcon, LinkIconContainer, ProfileContainer, ProfileDescription, ProfileHeader, ProfileName, ProfilePicture } from "./ProfileStyle";
-import css_icon from "../../assets/css-3-svgrepo-com.svg";
-
+import github_icon from "../../assets/logo-github.svg";
 export default function Profile () {
     return(
         <ProfileContainer>
             <ProfileHeader>Profile:</ProfileHeader>
-            <ProfilePicture/>
+            <ProfilePicture src={github_icon} />
             <LinkIconContainer>
             <ProfileName>LowRez129:</ProfileName>
-                <LinkIcon src={css_icon}/>
-                <LinkIcon src={css_icon}/>
-                <LinkIcon src={css_icon}/>
+                <LinkIcon onClick={() => window.location.href = "https://github.com/LowRez129"} src={github_icon}/>
+                <LinkIcon src={github_icon}/>
+                <LinkIcon src={github_icon}/>
             </LinkIconContainer>
             <ProfileDescription>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 

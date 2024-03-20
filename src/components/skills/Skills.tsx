@@ -5,8 +5,10 @@ import react_icon from "../../assets/react-svgrepo-com.svg";
 import node_js_icon from "../../assets/node-js-svgrepo-com.svg";
 import ts_icon from "../../assets/typescript-icon-svgrepo-com.svg";
 import js_icon from "../../assets/js-svgrepo-com.svg";
-import html from "../../assets/html-5-svgrepo-com.svg";
-import css from "../../assets/css-3-svgrepo-com.svg";
+import html_icon from "../../assets/html-5-svgrepo-com.svg";
+import css_icon from "../../assets/css-3-svgrepo-com.svg";
+import git_icon from "../../assets/git-svgrepo-com.svg";
+
 import SkillIcon from "./SkillIcon";
 
 export default function Skills () {
@@ -20,8 +22,9 @@ export default function Skills () {
                 <SkillIcon src={node_js_icon} name="Node.js"/>
                 <SkillIcon src={ts_icon} name="Typescript"/>
                 <SkillIcon src={js_icon} name="Javascript"/>
-                <SkillIcon src={html} name="HTML"/>
-                <SkillIcon src={css} name="CSS"/>
+                <SkillIcon src={html_icon} name="HTML"/>
+                <SkillIcon src={css_icon} name="CSS"/>
+                <SkillIcon src={git_icon} name="Git"/>
             </IconContainer>
         </SkillsContainer>
     )

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ProjectContainer = styled.div`
     display: grid;
-    background-color: rgb(127, 255, 212);
+    background-color: dodgerblue;
     grid-template-columns: 60% 1fr;
     grid-template-rows: 1fr 10% 1fr;
     grid-template-areas: 
@@ -13,7 +13,7 @@ const ProjectContainer = styled.div`
 
     @media screen and (min-width: 600px) {
         grid-template-columns: 20% 1fr;
-        grid-template-rows: 20% 80%;
+        grid-template-rows: 20% 1fr;
         grid-template-areas: 
             "project_image button_container button_container"
             "project_image project_description project_description"
@@ -22,12 +22,9 @@ const ProjectContainer = styled.div`
 `;
 
 const ProjectImage = styled.img`
-    height: 200px;
-    width: 200px;
-    padding: 20px;
-    background-color: yellow;
-    justify-self: center;
-    align-self: center;
+    height: 100%;
+    width: 100%;
+    background-color: cornflowerblue;
     grid-area: project_image;
 `;
 

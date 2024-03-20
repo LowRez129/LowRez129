@@ -46,7 +46,7 @@ const ProfileName = styled.div`
     justify-content: center;
     align-items: center;
     background-color: deepskyblue;
-    padding: 10px
+    padding: 10px;
 `;
 
 const ProfileDescription = styled.div`
@@ -57,16 +57,19 @@ const ProfileDescription = styled.div`
 
 const LinkIconContainer = styled.div`
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: auto repeat(3, 1fr);
     grid-area: icon_container;
     background-color: dodgerblue;
 `;
 
 const LinkIcon = styled.img`
-    background-color: antiquewhite;
     height: 100%;
     width: 100%;
+    background-color: deepskyblue;
+    &:hover,
+    &:active {
+        background-color: greenyellow;
+    }
 `;
 
 export { 

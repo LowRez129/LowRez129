@@ -18,7 +18,7 @@ const SkillsHeader = styled.div`
 const IconContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     gap: 10px;
     padding: 10px;
     margin: 10px;
@@ -27,7 +27,7 @@ const IconContainer = styled.div`
     background-color: black;
 
     @media screen and (min-width: 600px) {
-        grid-template-columns: repeat(8, 125px);
+        grid-template-columns: repeat(9, 125px);
         grid-template-rows: repeat(1, 125px);
     }
 `;
