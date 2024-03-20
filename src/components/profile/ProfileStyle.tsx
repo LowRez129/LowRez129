@@ -1,25 +1,26 @@
 import styled from "styled-components";
 
 const ProfileContainer = styled.section`
+    height: 1fr;
     display: grid;
-    gap: 10px;
-    padding: 10px;
+    gap: 1%;
+    padding: 1%;
     background-color: dodgerblue;
     grid-template-columns: 60% 1fr;
     grid-template-areas:
         "profile_header profile_header"
         "picture picture"
-        "icon_container icon_container"
+        "profile_name icon_container"
         "description description"
     ;
 
     @media screen and (min-width: 600px) {
-        grid-template-columns: 20% 1fr;
-        grid-template-rows: 10% 20% 1fr;
+        grid-template-columns: 20% 1fr 1fr 1fr;
+        grid-template-rows: 15% 20% 1fr;
         grid-template-areas:
-            "profile_header profile_header"
-            "picture icon_container"
-            "picture description"
+            "profile_header profile_header profile_header profile_header"
+            "picture profile_name . icon_container"
+            "picture description description description"
         ;
     }
 `;
@@ -47,17 +48,19 @@ const ProfileName = styled.div`
     align-items: center;
     background-color: deepskyblue;
     padding: 10px;
+    grid-area: profile_name;
 `;
 
 const ProfileDescription = styled.div`
     background-color: deepskyblue;
     padding: 10px;
     grid-area: description;
+    overflow: scroll;
 `;
 
 const LinkIconContainer = styled.div`
     display: grid;
-    grid-template-columns: auto repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-area: icon_container;
     background-color: dodgerblue;
 `;

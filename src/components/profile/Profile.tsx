@@ -4,9 +4,9 @@ export default function Profile () {
     return(
         <ProfileContainer>
             <ProfileHeader>Profile:</ProfileHeader>
-            <ProfilePicture src={github_icon} />
-            <LinkIconContainer>
+            <ProfilePicture src={github_icon}/>
             <ProfileName>LowRez129:</ProfileName>
+            <LinkIconContainer>
                 <LinkIcon onClick={() => window.location.href = "https://github.com/LowRez129"} src={github_icon}/>
                 <LinkIcon src={github_icon}/>
                 <LinkIcon src={github_icon}/>

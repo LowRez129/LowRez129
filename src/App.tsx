@@ -1,7 +1,7 @@
-import { AppContainer } from "./AppStyles"
-import Profile from "./components/profile/Profile"
-import ProjectsSection from "./components/projects/ProjectsSection"
-import Skills from "./components/skills/Skills"
+import { AppContainer } from "./AppStyles";
+import Profile from "./components/profile/Profile";
+import ProjectsSection from "./components/projects/ProjectsSection";
+import Skills from "./components/skills/Skills";
 
 function App() {
 
