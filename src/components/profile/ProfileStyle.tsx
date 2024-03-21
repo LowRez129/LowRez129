@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
-const ProfileContainer = styled.section`
+const ProfileContainer = styled.main`
+    overflow: scroll;
+    height: 1fr;
     display: grid;
     gap: 1%;
     padding: 1%;
     background-color: dodgerblue;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20% 5% 5% 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 5% 5% 1fr;
     grid-template-areas:
         "picture picture picture"
         "profile_name icon_container icon_container"
@@ -16,7 +18,7 @@ const ProfileContainer = styled.section`
 
     @media screen and (min-width: 600px) {
         grid-template-columns: 20% 1fr 10% 10% 1fr;
-        grid-template-rows: 20% 80%;
+        grid-template-rows: 10% 1fr;
         grid-template-areas:
             "picture profile_name about skill icon_container"
             "picture description description description description"
@@ -51,10 +53,9 @@ const ProfileName = styled.div`
 `;
 
 const ProfileDescription = styled.div`
-    display: grid;
-    background-color: yellow;
+    background-color: deepskyblue;
     grid-area: description;
-    overflow: hidden;
+    overflow: scroll;
 `;
 
 const LinkIconContainer = styled.div`
@@ -99,6 +100,7 @@ const SkillsButton = styled.button`
 `;
 
 export { 
-    ProfileContainer, ProfileHeader, ProfilePicture, ProfileName, ProfileDescription, 
-    LinkIconContainer, LinkIcon, Description, AboutButton, SkillsButton
+    ProfileContainer, ProfileHeader, ProfilePicture, 
+    ProfileName, ProfileDescription, LinkIconContainer, 
+    LinkIcon, Description, AboutButton, SkillsButton
 };

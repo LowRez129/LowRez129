@@ -10,11 +10,6 @@ const Header = styled.header`
     background-color: blue;
 `;
 
-const Main = styled.main`
-    display: grid;
-    height: 100%;
-`;
-
 const Footer = styled.footer`
     background-color: blueviolet;
 `;
@@ -22,4 +17,4 @@ const Footer = styled.footer`
 
 
 
-export { AppContainer, Header, Main, Footer };
+export { AppContainer, Header, Footer };

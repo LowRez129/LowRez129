@@ -7,9 +7,7 @@ function App() {
 
   return (
     <AppContainer>
-      <Main>
-          <Profile/>
-      </Main>
+      <Profile/>
     </AppContainer>
   )
 }
