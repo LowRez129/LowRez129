@@ -1,15 +1,15 @@
-import { AppContainer } from "./AppStyles";
+import { AppContainer, Footer, Header, Main } from "./AppStyles";
 import Profile from "./components/profile/Profile";
 import ProjectsSection from "./components/projects/ProjectsSection";
-import Skills from "./components/skills/Skills";
+import Skills from "./components/profile/skills/Skills";
 
 function App() {
 
   return (
     <AppContainer>
-      <Profile/>
-      <Skills/>
-      <ProjectsSection/>
+      <Main>
+          <Profile/>
+      </Main>
     </AppContainer>
   )
 }
