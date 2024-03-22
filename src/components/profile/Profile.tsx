@@ -1,7 +1,8 @@
-import { AboutButton, Description, LinkIcon, LinkIconContainer, ProfileContainer, ProfileDescription, ProfileName, ProfilePicture, SkillsButton } from "./ProfileStyle";
+import { Button, ButtonContainer, Description, LinkIcon, LinkIconContainer, ProfileContainer, ProfileDescription, ProfileName, ProfilePicture } from "./ProfileStyle";
 import github_icon from "../../assets/logo-github.svg";
-import Skills from "./skills/Skills";
+import Skills from "../skills/Skills";
 import { useState } from "react";
+import ProjectsSection from "../projects/ProjectsSection";
 
 export default function Profile () {
     const [index, setIndex] = useState(0);
@@ -15,7 +16,7 @@ export default function Profile () {
         Praesent aliquam, ligula id laoreet mollis, magna massa sollicitudin nunc, et pulvinar libero arcu ac ante. Integer vitae eros a nibh ornare commodo sit amet viverra sapien. 
     </Description>
 
-    const Selected = [AboutMe, <Skills/>];
+    const Selected = [AboutMe, <Skills/>, <ProjectsSection/>];
 
     return(
         <ProfileContainer>
@@ -26,8 +27,11 @@ export default function Profile () {
                 <LinkIcon src={github_icon}/>
                 <LinkIcon src={github_icon}/>
             </LinkIconContainer>
-                <AboutButton onClick={() => setIndex(0)}>About</AboutButton>
-                <SkillsButton onClick={() => setIndex(1)}>Skills</SkillsButton>
+            <ButtonContainer>
+                <Button onClick={() => setIndex(0)}>About</Button>
+                <Button onClick={() => setIndex(1)}>Skills</Button>
+                <Button onClick={() => setIndex(2)}>Projects</Button>
+            </ButtonContainer>
             <ProfileDescription>
                 {Selected[index]}
             </ProfileDescription>

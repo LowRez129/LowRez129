@@ -7,7 +7,6 @@ const IconContainer = styled.div`
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
     padding: 10px;
-    margin: 10px;
     background-color: black;
     overflow: scroll;
 `;

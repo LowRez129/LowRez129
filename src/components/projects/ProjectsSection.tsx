@@ -1,15 +1,12 @@
-import Project from "./Project";
-import { ProjectsContainer, ProjectsHeader, ProjectsSectionContainer } from "./ProjectsSectionStyles";
+import Project from "./Project.tsx";
+import { ProjectsSectionContainer } from "./ProjectsSectionStyles.tsx";
 import { neolexicon } from "./Details.ts";
 
 export default function ProjectsSection () {
 
     return (
         <ProjectsSectionContainer>
-            <ProjectsHeader>Projects:</ProjectsHeader>
-            <ProjectsContainer>
-                <Project src={neolexicon.src} name={neolexicon.name} description={neolexicon.description}/>
-            </ProjectsContainer>
+            <Project src={neolexicon.src} name={neolexicon.name} description={neolexicon.description}/>
         </ProjectsSectionContainer>
     )
 }

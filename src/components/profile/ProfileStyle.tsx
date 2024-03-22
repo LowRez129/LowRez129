@@ -4,24 +4,24 @@ const ProfileContainer = styled.main`
     overflow: scroll;
     height: 1fr;
     display: grid;
-    gap: 1%;
-    padding: 1%;
+    gap: 10px;
+    padding: 10px;
     background-color: dodgerblue;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 5% 5% 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20% 5% 5% 1fr;
     grid-template-areas:
-        "picture picture picture"
-        "profile_name icon_container icon_container"
-        "profile_name about skills"
-        "description description description"
+        "picture picture"
+        "profile_name icon_container"
+        "profile_name button_container"
+        "description description"
     ;
 
     @media screen and (min-width: 600px) {
-        grid-template-columns: 20% 1fr 10% 10% 1fr;
+        grid-template-columns: 20% 1fr 1fr 1fr;
         grid-template-rows: 10% 1fr;
         grid-template-areas:
-            "picture profile_name about skill icon_container"
-            "picture description description description description"
+            "picture profile_name button_container icon_container"
+            "picture description  description description"
         ;
     }
 `;
@@ -56,13 +56,16 @@ const ProfileDescription = styled.div`
     background-color: deepskyblue;
     grid-area: description;
     overflow: scroll;
+    padding: 10px;
 `;
 
 const LinkIconContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-area: icon_container;
-    background-color: dodgerblue;
+    background-color: black;
+    border: solid black 3px;
+    gap: 3px;
 `;
 
 const LinkIcon = styled.img`
@@ -79,20 +82,18 @@ const Description = styled.div`
     padding: 10px;
 `;
 
-const AboutButton = styled.button`
-    border: none;
-    background-color: deepskyblue;
-    grid: about;
-    &:hover,
-    &:active {
-        background-color: greenyellow;
-    }
+const ButtonContainer = styled.div`
+    border: solid black 3px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: button_container;
+    gap: 3px;
+    background-color: black;
 `;
 
-const SkillsButton = styled.button`
+const Button = styled.button`
     border: none;
     background-color: deepskyblue;
-    grid: skills;
     &:hover,
     &:active {
         background-color: greenyellow;
@@ -102,5 +103,5 @@ const SkillsButton = styled.button`
 export { 
     ProfileContainer, ProfileHeader, ProfilePicture, 
     ProfileName, ProfileDescription, LinkIconContainer, 
-    LinkIcon, Description, AboutButton, SkillsButton
+    LinkIcon, Description, ButtonContainer, Button
 };
