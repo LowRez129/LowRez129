@@ -4,7 +4,8 @@ const SkillIconContainer = styled.div`
     display: grid;
     grid-template-rows: 80% 1fr;
     transition: transform 0.5s;
-    &:hover {
+    &:hover,
+    &:active {
         transform: translateY(-5px);
     }
 `;

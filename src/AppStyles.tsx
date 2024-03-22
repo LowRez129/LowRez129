@@ -1,9 +1,20 @@
 import styled from "styled-components";
 
-const AppContainer = styled.main`
-    background-color: red;
+const AppContainer = styled.div`
+    background-color: grey;
     display: grid;
     height: 100vh;
 `;
 
-export { AppContainer };
+const Header = styled.header`
+    background-color: blue;
+`;
+
+const Footer = styled.footer`
+    background-color: blueviolet;
+`;
+
+
+
+
+export { AppContainer, Header, Footer };
