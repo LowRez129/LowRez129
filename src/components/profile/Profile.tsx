@@ -6,7 +6,6 @@ import ProjectsSection from "../projects/ProjectsSection";
 
 export default function Profile () {
     const [index, setIndex] = useState(0);
-
     const AboutMe = <Description>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Aenean tempor, est a auctor semper, nisl nisi condimentum nunc, a finibus ex velit nec est. Cras varius pretium risus ac dignissim. 

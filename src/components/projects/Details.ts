@@ -9,7 +9,9 @@ const neolexicon = {
         Suspendisse commodo enim ut bibendum suscipit. 
         Praesent aliquam, ligula id laoreet mollis, magna massa sollicitudin nunc, et pulvinar libero arcu ac ante. 
         Integer vitae eros a nibh ornare commodo sit amet viverra sapien. 
-    `
+    `,
+    website: "https://neolexicon-client.onrender.com/",
+    github: "https://github.com/LowRez129/neolexicon"
 }
 
 export { neolexicon }
