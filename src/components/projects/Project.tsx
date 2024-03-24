@@ -15,8 +15,8 @@ export default function Project ({ src = "", name = "<name>", description = "<de
     return (
         <ProjectContainer>
             <ProjectImage src={src} alt={name}/>
+            <ProjectName>{name}:</ProjectName>
             <LinkButtonContainer>
-                <ProjectName>{name}:</ProjectName>
                 <LinkButton onClick={goto_neolexicon_website}>&gt;Website&lt;</LinkButton>
                 <LinkButton onClick={goto_neolexicon_github}>&gt;Github Repo&lt;</LinkButton>
             </LinkButtonContainer>

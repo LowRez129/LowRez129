@@ -54,12 +54,13 @@ const ProfileName = styled.div`
 
 const ProfileDescription = styled.div`
     grid-area: description;
-    overflow: scroll;
+    overflow: auto;
 `;
 
 const LinkIconContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
     grid-area: icon_container;
     background-color: black;
     border: solid black 3px;
