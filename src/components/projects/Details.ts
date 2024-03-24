@@ -1,5 +1,6 @@
+import neolexicon_png from "../../assets/Neolexicon.png";
 const neolexicon = {
-    src: "",
+    src: neolexicon_png,
     name: "Neolexicon",
     description: `
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 

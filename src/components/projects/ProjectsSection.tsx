@@ -19,6 +19,13 @@ export default function ProjectsSection () {
                 website={neolexicon.website}
                 github={neolexicon.github}
             />
+            <Project 
+                src={neolexicon.src} 
+                name={neolexicon.name} 
+                description={neolexicon.description}
+                website={neolexicon.website}
+                github={neolexicon.github}
+            />
         </ProjectsSectionContainer>
     )
 }
