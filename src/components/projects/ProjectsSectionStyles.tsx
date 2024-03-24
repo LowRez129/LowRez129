@@ -8,7 +8,7 @@ const ProjectsSectionContainer = styled.section`
     grid-auto-rows: 100%;
     box-sizing: border-box;
     padding: 10px;
-    overflow: scroll;
+    overflow: auto;
     background-color: black;
     gap: 10px;
 `;
