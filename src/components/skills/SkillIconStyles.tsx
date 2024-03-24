@@ -11,9 +11,10 @@ const SkillIconContainer = styled.div`
 `;
 
 const Icon = styled.img`
-    height: 80%;
-    width: 80%;
-    padding: 10%;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
     background-color: cornflowerblue;
 `;
 

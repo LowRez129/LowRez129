@@ -8,7 +8,6 @@ const IconContainer = styled.div`
     gap: 10px;
     padding: 10px;
     background-color: black;
-    overflow: scroll;
 `;
 
 export { IconContainer };
