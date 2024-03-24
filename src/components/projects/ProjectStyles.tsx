@@ -12,7 +12,7 @@ const ProjectContainer = styled.div`
     ;
 
     @media screen and (min-width: 600px) {
-        grid-template-columns: 20% 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 20% 1fr;
         grid-template-areas: 
             "project_image button_container button_container"

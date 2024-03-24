@@ -8,17 +8,17 @@ interface ProjectType {
     github: string
 }
 
-export default function Project ({ src, name, description, website, github } : ProjectType) {
+export default function Project ({ src = "", name = "<name>", description = "<description>", website = "", github = "" } : ProjectType) {
     const goto_neolexicon_website = () => window.location.href = website;
     const goto_neolexicon_github = () => window.location.href = github;
 
     return (
         <ProjectContainer>
-            <ProjectImage src={src}/>
+            <ProjectImage src={src} alt={name}/>
             <LinkButtonContainer>
-                <ProjectName>{name}</ProjectName>
-                <LinkButton onClick={goto_neolexicon_website}>&lt;Website&gt;</LinkButton>
-                <LinkButton onClick={goto_neolexicon_github}>&lt;Github Repo&gt;</LinkButton>
+                <ProjectName>{name}:</ProjectName>
+                <LinkButton onClick={goto_neolexicon_website}>&gt;Website&lt;</LinkButton>
+                <LinkButton onClick={goto_neolexicon_github}>&gt;Github Repo&lt;</LinkButton>
             </LinkButtonContainer>
             <ProjectDescription>{description}</ProjectDescription>
         </ProjectContainer>
