@@ -6,7 +6,8 @@ const SkillIconContainer = styled.div`
     transition: transform 0.5s;
     &:hover,
     &:active {
-        transform: translateY(-5px);
+        position: static;
+        transform: translateY(-50px);
     }
 `;
 

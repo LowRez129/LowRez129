@@ -54,7 +54,6 @@ const ProfileName = styled.div`
 
 const ProfileDescription = styled.div`
     grid-area: description;
-    overflow: scroll;
 `;
 
 const LinkIconContainer = styled.div`
