@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 const ProfileContainer = styled.main`
-    overflow: scroll;
-    height: 1fr;
     display: grid;
     gap: 10px;
     padding: 10px;
+    min-height: 0;
+    min-width: 0;
     background-color: dodgerblue;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 20% 5% 5% 1fr;
@@ -17,11 +17,11 @@ const ProfileContainer = styled.main`
     ;
 
     @media screen and (min-width: 600px) {
-        grid-template-columns: 20% 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 10% 1fr;
         grid-template-areas:
-            "picture profile_name button_container icon_container"
-            "picture description  description description"
+            "profile_name button_container icon_container"
+            "picture description description"
         ;
     }
 `;
@@ -53,10 +53,8 @@ const ProfileName = styled.div`
 `;
 
 const ProfileDescription = styled.div`
-    background-color: deepskyblue;
     grid-area: description;
     overflow: scroll;
-    padding: 10px;
 `;
 
 const LinkIconContainer = styled.div`
@@ -79,7 +77,10 @@ const LinkIcon = styled.img`
 `;
 
 const Description = styled.div`
+    background-color: deepskyblue;
     padding: 10px;
+    height: 100%;
+    box-sizing: border-box;
 `;
 
 const ButtonContainer = styled.div`
